@@ -25,7 +25,7 @@ import inventoryRoutes from "./routes/inventory.routes.js";
 import hrRoutes from "./routes/hr.routes.js";
 import authRoutes from "./routes/auth.routes.js";
 import adminRoutes from "./routes/admin.routes.js";
-import salesRoutes from "./routes/sales.routes.js";
+
 
 app.use("/api/leads", leadRoutes);
 app.use("/api/vehicles", vehicleRoutes);
@@ -37,7 +37,6 @@ app.use("/api/inventory", inventoryRoutes);
 app.use("/api/hr", hrRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/admin", adminRoutes);
-app.use("/api/sales", salesRoutes);
 
 
 app.get("/", (req, res) => {
